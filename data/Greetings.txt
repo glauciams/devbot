@@ -1,0 +1,38 @@
+Greetings: 
+goodbye:
+  - text: Bye!!
+greet:
+  - text: Hey! What do you need to know regarding your scenario today?
+
+Scenario responses:
+artifact:
+  - text: You need to edit class client.java and class diagram OrderMain. 
+commit:
+  - text: OK, I am committing your code to your repo. 
+priority:
+  - text: The task with the highest priority assigned to you is Task 13003. 
+pullrequest:
+  - text: Please, create a pull request to a branch identified with your task ID.
+push:
+  - text: Please, create a pull request to a branch identified with your task ID.
+sync:
+  - text: You should synchronize your repo. I bet you know how. Click in the sync repo button on your version control page.
+tasks:
+  - text: Tasks 27405, 67933 and 13003 are open and assigned to you. 
+tool:
+  - text: You have to open Eclipse and synchronize your code. After, assign your a
+      test task to the test team. 
+
+After each response: 
+did_that_help:
+  - text: Did that help you? What else can I help you with?
+
+When out of the defined response scope: 
+default_fallback:
+  - text: Sorry, I can't help you with that. Is there anything else I can help with?
+
+
+
+
+
+

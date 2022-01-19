@@ -1,0 +1,80 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: false
+intents:
+- pull
+- priority
+- greet
+- commit
+- goodbye
+- exception
+- tasks
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- artifact
+- push
+- sync
+- tool
+- followup
+- botservice
+responses:
+  utter_artifact:
+  - text: You need to edit class client.java and class diagram OrderMain.
+  utter_botservice:
+  - text: I can help you discover which tasks are assigned to you,their priorities,
+      how to do a pull request and you can ask meto commit your code.
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_commit:
+  - text: OK, I am committing your code to your repository.
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_exception:
+  - text: Sorry, I can’t help you with that. Is there anything else I can help with?
+  utter_followup:
+  - text: Did that help you? What else can I help you with?
+  utter_goodbye:
+  - text: Bye!
+  utter_greet:
+  - text: Hey! What do you need to know regarding your scenario today?
+  utter_happy:
+  - text: Great, carry on!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_priority:
+  - text: The task with the highest priority assigned to you is Task 13003.
+  utter_pull:
+  - text: Please, create a pull request to a branch identified with your task ID.
+  utter_push:
+  - text: Please, download or clone your repository to your local machine.Keep it
+      synchronized.
+  utter_sync:
+  - text: You should synchronize your repo. Click in the sync repobutton on your version
+      control page.
+  utter_tasks:
+  - text: Tasks 27405, 67933 and 13003 are open and assigned to you.
+  utter_tool:
+  - text: You have to open Eclipse or VSCode and synchronize your code.After, assign
+      a test task to the test team.
+actions:
+- utter_artifact
+- utter_botservice
+- utter_cheer_up
+- utter_commit
+- utter_did_that_help
+- utter_exception
+- utter_followup
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_iamabot
+- utter_priority
+- utter_pull
+- utter_push
+- utter_sync
+- utter_tasks
+- utter_tool
